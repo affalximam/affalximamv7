@@ -1,0 +1,513 @@
+/*===========================================================
+    
+    BASIC
+
+===========================================================*/
+
+@font-face {
+    font-family: 'Open-sans-hebrew';
+    src: url('../fonts/open-sans-hebrew.ttf') format('truetype');
+}
+
+.font-open-sans-hebrew{
+    font-family: 'Open-sans-hebrew', sans-serif;
+}
+
+.bg-dark-1{
+    background-color: #121212;
+}
+
+.bg-dark-2{
+    background-color: #1E1E1E;
+}
+
+.bg-dark-3{
+    background-color: #161617;
+}
+
+.bg-dark-4{
+    background-color: #1F1F1F;
+}
+
+.bg-dark-5{
+    background-color: #1B1E23;
+}
+
+.bg-gold-1{
+    background-color: #C49C66;
+}
+
+.color-gold-1{
+    color: #C49C66;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+.fs-6{
+    font-size: 12px !important;
+}
+
+/*===========================================================
+
+    NAVBAR 
+
+===========================================================*/
+
+.navbar-home{
+    transition: .5s;
+}
+
+.navbar-transform {
+    background-color: #121212;
+    transition: .5s;
+}
+
+.navbar-brand{
+    height: 75px;
+    align-content: center;
+    font-size: 1.5em;
+}
+
+.navbar .nav-link{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.navbar .nav-link:hover{
+    color: #C49C66;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 99 !important;
+}
+
+.navbar-toggler span {
+    width: 30px;
+    height: 2.1px;
+    border-radius: 10px;
+    display: absolute;
+    background-color: #fff;
+    margin: 3px;
+    transition: 0.5s;
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform-origin: center;
+    animation: navtogspan1 0.5s ease-in-out forwards;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+    transform-origin: center;
+    animation: navtogspan1hov 0.5s ease-in-out forwards;
+}
+
+.navbar-toggler span:nth-child(2) {
+    transform-origin: center;
+    animation: navtogspan2 0.5s ease-in-out forwards;
+    transition: 0.5s;
+}
+
+.navbar-toggler:hover span:nth-child(2) {
+    width: 30px;
+    margin-left: 3px;
+}
+
+.navbar-toggler.open span:nth-child(2) {
+    transform-origin: center;
+    animation: navtogspan2hov 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform-origin: center;
+    animation: navtogspan3 0.5s ease-in-out forwards;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+    transform-origin: center;
+    animation: navtogspan3hov 0.5s ease-in-out forwards;
+}
+
+@keyframes navtogspan1 {
+    0% {
+        transform: translate(0, 6px) rotate(45deg);
+    }
+
+    50% {
+        transform: translate(0, 6px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes navtogspan1hov {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0, 6px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 6px) rotate(45deg);
+    }
+}
+
+@keyframes navtogspan2 {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navtogspan2hov {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes navtogspan3 {
+    0% {
+        transform: translate(0, -10px) rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(0, -10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes navtogspan3hov {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0, -10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, -10px) rotate(-45deg);
+    }
+}
+
+/* Responsive */
+/* Small devices (portain phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    .navbar-nav{
+        background-color: #121212;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .navbar-nav{
+        background-color: #121212;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .navbar-nav{
+        background-color: transparent;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+}
+
+/*===========================================================
+    
+    HOME
+
+===========================================================*/
+
+.jumbotron{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden !important;
+}
+
+.jumbotron h1{
+    font-size: 4em;
+}
+
+.jumbotron h1:nth-child(2){
+    font-size: 3em;
+}
+
+.jumbotron h2{
+    min-height: 48px;
+    letter-spacing: .2em;
+    font-size: 2em;
+}
+
+.jumbotron h1 span{
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+}
+
+.jumbotron .social-link a i{
+    font-size: 2em;
+}
+
+.jumbotron .social-link a i:hover{
+    color: #C49C66;
+}
+
+.jumbotron a.btn{
+    border: 2px solid;
+    font-size: 2em;
+}
+
+.jumbotron a.btn:hover{
+    border-color: #C49C66;
+    color: #C49C66;
+}
+
+.jumbotron .container{
+    z-index: 9;
+}
+
+.jumbotron .profile{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    align-content: end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    z-index: 1;
+}
+
+.jumbotron .profile img{
+    filter: brightness(1);
+}
+
+.vector-1{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 2;
+}
+
+.ventor-1 img{
+    width: 100vw;
+}
+
+.home-about h2{
+    font-size: 4em;
+}
+
+.home-about a.btn{
+    border: 2px solid;
+    font-size: 2em;
+}
+
+.home-about a.btn:hover{
+    border-color: #C49C66;
+    color: #C49C66;
+}
+
+.home-services h2{
+    font-size: 5em;
+    -webkit-text-stroke: .5px #fff;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-services i{
+    font-size: 50px;
+    width: 75px;
+    height: 75px;
+    transition: .5s;
+}
+
+.home-services i:hover{
+    background-color: #C49C66;
+    color: #fff;
+}
+
+.home-project h2{
+    font-size: 4em;
+}
+
+.home-project .card{
+    width: 360px;
+    height: 202.5px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-project img{
+    width: 100%;
+    transition: .5s;
+}
+
+.home-project .card-content{
+    background-color: rgba(0, 0, 0, .65);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: .5s;
+    opacity: 0;
+    content: '';
+}
+
+.home-project .card:hover img{
+    transform: scale(1.5);
+}
+
+.home-project .card:hover .card-content{
+    opacity: 1;
+}
+
+.home-blog h2{
+    font-size: 4em;
+}
+
+/* Responsive */
+/* Small devices (portain phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    .jumbotron .profile img{
+        height: 100%;
+        filter: brightness(.6);
+    }
+    .home-about h2{
+        font-size: 3em;
+    }
+    .home-services h2{
+        font-size: 3em;
+    }
+    .home-project h2{
+        font-size: 3em;
+    }
+    .home-blog h2{
+        font-size: 3em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .jumbotron .profile img{
+        height: 100%;
+        filter: brightness(.6);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .jumbotron .profile img{
+        height: 100%;
+        width: auto;
+        filter: brightness(.6);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .jumbotron .profile img{
+        height: 80%;
+        margin-bottom: 50px;
+        width: auto;
+        filter: brightness(1.5);
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .jumbotron h1{
+        font-size: 6em;
+    }
+    .jumbotron h1:nth-child(2){
+        font-size: 4em;
+    }
+    .jumbotron .profile img{
+        margin-right: 100px;
+        margin-bottom: 125px;
+    }
+    .home-about h2{
+        font-size: 6em;
+    }
+    .home-services h2{
+        font-size: 6em;
+    }
+    .home-project h2{
+        font-size: 6em;
+    }
+    .home-blog h2{
+        font-size: 6em;
+    }
+}
+
+/*===========================================================
+    
+    CONTACT
+
+===========================================================*/
+
+.contact{
+    background: linear-gradient(180deg, rgba(27,30,35,1) 0%, rgba(13,14,17,1) 74%);
+}
+
+.contact .card p{
+    font-size: 10px;
+}
+
+.contact a{
+    width: 50px;
+    height: 50px;
+}
+
+.contact a i{
+    font-size: 25px;
+    line-height: 25px;
+    max-height: 25px;
+}
