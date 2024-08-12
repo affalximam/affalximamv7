@@ -20,7 +20,7 @@ export default function Home() {
 					<div className="row">
 						<div className="col-lg-6">
 							<h1 className="font-font-open-sans-hebrew fw-bolder fst-italic text-white">HII THERE!</h1>
-							<h1 className="font-font-open-sans-hebrew fw-bolder fst-italic text-white">I'm <span>affalximam</span></h1>
+							<h1 className="font-font-open-sans-hebrew fw-bolder fst-italic text-white">I&apos;m <span>affalximam</span></h1>
 							<h2 className="font-font-open-sans-hebrew fw-bolder fst-italic text-white lh-base d-block mb-4">
 								{text} 
 							</h2>
@@ -35,10 +35,10 @@ export default function Home() {
 					</div>
 				</div>
 				<figure className="profile">
-					<img src="/images/webp/me-1.webp" alt="" />
+					<Image src="/images/webp/me-1.webp" alt="" />
 				</figure>
 				<figure className='vector-1'>
-					<img src="/images/svg/vector-1.svg" alt="" />
+					<Image src="/images/svg/vector-1.svg" alt="" />
 				</figure>
 			</section>
 			<section className="home-about bg-dark-2 text-white font-open-sans-hebrew py-5">
@@ -90,7 +90,7 @@ export default function Home() {
 					<div className="row">
 						<div className="col-lg-4 mb-4">
 							<div className="card m-auto rounded-0 bg-transparent text-white font-open-sans-hebrew">
-								<img src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
+								<Image src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
 								<div className="card-content d-flex flex-column justify-content-center align-content-center">
 									<h3 className="mb-0">Project 3</h3>
 									<a href="" className="btn btn-md btn-outline-light bg-transparent text-white w-50 m-auto rounded-4 my-2">View Detail</a>
@@ -99,7 +99,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-4 mb-4">
 							<div className="card m-auto rounded-0 bg-transparent text-white font-open-sans-hebrew">
-								<img src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
+								<Image src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
 								<div className="card-content d-flex flex-column justify-content-center align-content-center">
 									<h3 className="mb-0">Project 3</h3>
 									<a href="" className="btn btn-md btn-outline-light bg-transparent text-white w-50 m-auto rounded-4 my-2">View Detail</a>
@@ -108,7 +108,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-4 mb-4">
 							<div className="card m-auto rounded-0 bg-transparent text-white font-open-sans-hebrew">
-								<img src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
+								<Image src="/images/png/port-AFFALXIMAM-V4.png" alt="" />
 								<div className="card-content d-flex flex-column justify-content-center align-content-center">
 									<h3 className="mb-0">Project 3</h3>
 									<a href="" className="btn btn-md btn-outline-light bg-transparent text-white w-50 m-auto rounded-4 my-2">View Detail</a>
@@ -120,7 +120,7 @@ export default function Home() {
 			</section>
 
 			<section className="home-blog bg-dark-3 text-white font-open-sans-hebrew">
-				<img src="/images/svg/vector-2.svg"	className="w-100 mb-5" />
+				<Image src="/images/svg/vector-2.svg" className="w-100 mb-5" alt=" . . "/>
 				<div className="container">
 					<div className="row py-5">
 						<h2 className="fw-bolder font-open-sans-hebrew text-center">Blog</h2>
@@ -128,7 +128,7 @@ export default function Home() {
 					<div className="row">
 						<div className="col-lg-4 mb-4">
 							<a href='' className="card p-0 bg-dark-5 text-white text-decoration-none">
-								<img src="/images/png/image-1.png" className="card-img-top w-100" />
+								<Image src="/images/png/image-1.png" className="card-Image-top w-100" alt=" . . "/>
 								<div className="card-body">
 									<h3 className="card-title fs-5">Mengenal BreachForums, Blackmarket tempat hacker menjual data hasil peretasan.</h3>
 									<p className="card-text fs-6">Breached forum adalah forum online sebagai tempat publikasi, penjualan serta pembelian data hasil peretasan. Data yang di publikasi bisa berupa dump database yang biasanya berisi informasi penting seperti data pribadi penduduk, nomor telepon sampai data rahasia negara tersedia disini . . .</p>
@@ -138,7 +138,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-4 mb-4">
 							<a href='' className="card p-0 bg-dark-5 text-white text-decoration-none">
-								<img src="/images/png/image-1.png" className="card-img-top w-100" />
+								<Image src="/images/png/image-1.png" className="card-Image-top w-100" alt=" . . "/>
 								<div className="card-body">
 									<h3 className="card-title fs-5">Mengenal BreachForums, Blackmarket tempat hacker menjual data hasil peretasan.</h3>
 									<p className="card-text fs-6">Breached forum adalah forum online sebagai tempat publikasi, penjualan serta pembelian data hasil peretasan. Data yang di publikasi bisa berupa dump database yang biasanya berisi informasi penting seperti data pribadi penduduk, nomor telepon sampai data rahasia negara tersedia disini . . .</p>
@@ -148,7 +148,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-4 mb-4">
 							<a href='' className="card p-0 bg-dark-5 text-white text-decoration-none">
-								<img src="/images/png/image-1.png" className="card-img-top w-100" />
+								<Image src="/images/png/image-1.png" className="card-Image-top w-100" alt=" . . "/>
 								<div className="card-body">
 									<h3 className="card-title fs-5">Mengenal BreachForums, Blackmarket tempat hacker menjual data hasil peretasan.</h3>
 									<p className="card-text fs-6">Breached forum adalah forum online sebagai tempat publikasi, penjualan serta pembelian data hasil peretasan. Data yang di publikasi bisa berupa dump database yang biasanya berisi informasi penting seperti data pribadi penduduk, nomor telepon sampai data rahasia negara tersedia disini . . .</p>
@@ -158,7 +158,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<img src="/images/svg/vector-3.svg"	className="w-100 mt-5" />
+				<Image src="/images/svg/vector-3.svg"	className="w-100 mt-5" alt=" . . "/>
 			</section>
 			<Contact />
 		</>
