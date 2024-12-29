@@ -44,6 +44,31 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+
+    if ($(window).scrollTop() < $(".jumbotron-2").height() / 2) {
+        $(".navbar-2").addClass("navbar-transform-1");
+        $(".navbar-2").removeClass("navbar-transform-2");
+
+    } else {
+        $(".navbar-2").addClass("navbar-transform-2");
+        $(".navbar-2").removeClass("navbar-transform-1");
+    }
+        
+    
+    $(window).scroll(function () {
+        
+        if ($(this).scrollTop() < $(".jumbotron-2").height() / 2) {
+            $(".navbar-2").addClass("navbar-transform-1");
+            $(".navbar-2").removeClass("navbar-transform-2");
+        } else {
+            $(".navbar-2").addClass("navbar-transform-2");
+            $(".navbar-2").removeClass("navbar-transform-1");
+        }
+
+    });
+});
+
+$(document).ready(function () {
     $('.input-nama').on('focus', function () {
         $('.label-input-nama').addClass('label-move');
     }).on('blur', function () {

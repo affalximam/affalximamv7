@@ -4,6 +4,11 @@
 
 ===========================================================*/
 
+body{
+    overflow-x: hidden !important;
+    transition: 1s !important;
+}
+
 @font-face {
     font-family: 'Open-sans-hebrew';
     src: url('../fonts/open-sans-hebrew.ttf') format('truetype');
@@ -33,17 +38,24 @@
     background-color: #1B1E23;
 }
 
-.bg-gold-1{
+.bg-dark-6{
+    background-color: #0b0c0f;
+}
+
+.bg-gold-1, .bg-gold-1-hover:hover{
     background-color: #C49C66;
+}
+
+.border-gold-1, .border-gold-1-hover:hover{
+    border-color: #C49C66;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 .color-gold-1{
     color: #C49C66;
-}
-
-body{
-    overflow-x: hidden !important;
-    transition: 1s !important;
 }
 
 .fs-6{
@@ -56,7 +68,7 @@ body{
 
 ===========================================================*/
 
-.navbar-home{
+.navbar{
     transition: 1s ease;
     z-index: 1000;
     width: 100%;
@@ -421,19 +433,33 @@ body{
     transition: .5s;
 }
 
-.home-services .home-services-icons svg{
-    width: 50px;
-    height: 50px;
-    color: #C49C66;
-    transition: .5s;
-}
-
 .home-services .home-services-icons:hover{
     background-color: #C49C66;
 }
+ 
+.home-services .home-services-icons{
+    position: relative;
+    width: 25%;
+    padding-top: 25%;
+    cursor: pointer;
+}
+    
+.home-services .home-services-icons img{
+    object-fit: cover;
+    padding: 20% 20%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-.home-services .home-services-icons:hover svg{
-    color: #fff;
+.home-services .home-services-icons:hover {
+    background-color: #C49C66;
+}
+
+.home-services .home-services-icons:hover img{
+    filter: brightness(0) invert(1);
 }
 
 .home-project h2{
@@ -671,4 +697,437 @@ body{
     .contact h2{
         font-size: 6em;
     }
+}
+
+/*===========================================================
+    
+    JUMBOTRON
+
+===========================================================*/
+
+.jumbotron-2{
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow: hidden !important;;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.jumbotron-2 h1{
+    font-size: 6em;
+}
+
+.jumbotron-about{
+    background-image: url('../images/webp/bg-1.webp');
+}
+
+.jumbotron-services{
+    background-image: url('../images/webp/bg-2.webp');
+}
+
+.jumbotron-project{
+    background-image: url('../images/webp/bg-3.webp');
+}
+
+.jumbotron-blog{
+    background-image: url('../images/webp/bg-4.webp');
+}
+
+.jumbotron-2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.vector-4 {
+    display: block;    
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100vw / 1920 * 177);
+    width: 100vw;
+    z-index: 2;
+}
+
+.vector-5 {
+    display: block;
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    height: calc(100vw / 1920 * 177);
+    width: calc(100vw + 50px);
+    z-index: 2;
+}
+
+.about-me h1{
+    font-size: 2em;
+}
+
+.about-me .card{
+    transition: .5s;
+}
+
+.about-me .card:hover{
+    background-color: #1B1E23;
+}
+
+.about-me-profile-image {
+    position: relative;
+    width: 100%;
+    padding-top: calc(100% + 56.25%); /* 16:9 aspect ratio (9 / 16 * 100) */
+    overflow: hidden;
+}
+
+.about-me-profile-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-me .skills-icons {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    transition: .5s;
+}
+
+.about-me .skills-icons img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.about-me .skills-icons:hover img {
+    opacity: 1;
+}
+
+.certificate figure{
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    cursor: pointer;
+}
+
+.certificate figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Style modal untuk fullscreen */
+.certificate .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Gambar di dalam modal */
+.certificate  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+  
+  /* Tombol close (X) */
+.certificate .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+  
+  
+  /* Style untuk transisi */
+.certificate .modal-content, .close {
+    transition: all 0.5s ease;
+}
+
+.services h1{
+    font-size: 2em;
+}
+
+.services .services-icons{
+    position: relative;
+    width: 25%;
+    padding-top: 25%;
+    cursor: pointer;
+}
+    
+.services .services-icons img{
+    object-fit: cover;
+    padding: 20% 20%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .services-icons:hover {
+    background-color: #C49C66;
+}
+
+.services .services-icons:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.project h1{
+    font-size: 2em;
+}
+
+.project .card .card-img-top {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.project .card a{
+    border-color: #C49C66;
+    transition: .5s;
+}
+
+.project .card a:hover{
+    border-color: #fff;
+    background-color: #C49C66;
+    transition: .5s;
+}
+
+.blog h1{
+    font-size: 2em;
+}
+
+.blog .card .card-img-top {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.blog .card a{
+    border-color: #C49C66;
+    transition: .5s;
+}
+
+.blog .card a:hover{
+    border-color: #fff;
+    background-color: #C49C66;
+    transition: .5s;
+}
+
+/* Responsive */
+/* Small devices (portain phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    .jumbotron .profile{
+        width: 100vw;
+        height: 100vh;
+    }
+    .jumbotron .profile img{
+        height: 100%;
+        filter: brightness(.6);
+    }
+    .home-about h2{
+        font-size: 3em;
+    }
+    .home-services h2{
+        font-size: 3em;
+    }
+    .home-project h2{
+        font-size: 3em;
+    }
+    .home-blog h2{
+        font-size: 3em;
+    }
+    .jumbotron-2 h1{
+        font-size: 3em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .jumbotron .profile{
+        width: 100vw;
+        height: 100vh;
+    }
+    .jumbotron .profile img{
+        filter: brightness(.6);
+    }
+    .jumbotron-2 h1{
+        font-size: 3em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .jumbotron .profile{
+        width: calc(100vh / 4 * 3);
+        height: 100vh;
+    }
+    .jumbotron .profile img{
+        filter: brightness(.6);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .jumbotron .profile{
+        margin-top: 10vh;
+        height: calc(100vw / 2 / 3 * 4);
+        width: calc(100vw / 2);
+    }
+    .jumbotron .profile img{
+        filter: brightness(1.2);
+    }
+    .jumbotron-2 h1{
+        font-size: 6em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .jumbotron .profile{
+        margin-top: 5vh;
+        margin-right: 5vw;
+        height: calc(100vh - 10vh);
+        width: 600px;
+    }
+    .jumbotron h1{
+        font-size: 6em;
+    }
+    .jumbotron h1:nth-child(2){
+        font-size: 4em;
+    }
+    .jumbotron .profile img{
+        margin-right: 100px;
+        margin-bottom: 125px;
+    }
+    .home-about h2{
+        font-size: 6em;
+    }
+    .home-services h2{
+        font-size: 6em;
+    }
+    .home-project h2{
+        font-size: 6em;
+    }
+    .home-blog h2{
+        font-size: 6em;
+    }
+}
+
+/*===========================================================
+    
+    CONTACT
+
+===========================================================*/
+
+.contact{
+    background: linear-gradient(180deg, rgba(27,30,35,1) 0%, rgba(13,14,17,1) 74%);
+}
+
+.contact h2{
+    font-size: 4em;
+}
+
+
+.contact .card p{
+    font-size: 10px;
+}
+
+.contact .card h3{
+    font-size: 14px;
+}
+
+.contact a{
+    width: 50px;
+    height: 50px;
+}
+
+.contact a i{
+    font-size: 25px;
+    line-height: 25px;
+    max-height: 25px;
+}
+
+.contact input{
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.contact textarea{
+    box-shadow: none;
+    border-color: #fff;
+    min-height: 150px !important;
+    max-height: 150px;
+}
+
+.contact input:focus, .contact textarea:focus{
+    box-shadow: none;
+    border-color: #C49C66;
+}
+
+.contact label:focus{
+    color: blue;
+}
+
+.form-floating {
+    position: relative;
+}
+
+.label-move{
+    transform: translateY(-10px) scale(.8);
+}
+
+
+/* Responsive */
+/* Small devices (portain phones, 576px and down) */
+@media screen and (max-width: 576px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
 }

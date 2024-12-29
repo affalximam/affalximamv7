@@ -1,6 +1,6 @@
 export default function navbar() {
     return (
-		<nav className="navbar navbar-home navbar-expand-lg navbar-dark text-white px-lg-5 py-0">
+		<nav className="navbar navbar-2 navbar-expand-lg navbar-dark text-white px-lg-5 py-0">
             <div className="container-fluid">
                 <a className="navbar-brand font-open-sans-hebrew fw-bolder" href="#">affalximam</a>
                 <button
@@ -19,22 +19,22 @@ export default function navbar() {
                 <div className="collapse navbar-collapse justify-content-end text-center" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">home</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="/">home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">about</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="/about">about</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">services</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="/services">services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">project</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="/project">project</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">blog</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="/blog">blog</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#">contact</a>
+                            <a className="nav-link font-open-sans-hebrew fw-bold" href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
